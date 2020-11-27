@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScrollViewWithStackView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bcj-90-P1Y">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cdc-7q-glv">
+                                        <rect key="frame" x="0.0" y="0.0" width="2070" height="896"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="peter1" translatesAutoresizingMaskIntoConstraints="NO" id="omN-rM-UFC">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="peter2" translatesAutoresizingMaskIntoConstraints="NO" id="5Oe-hW-7hY">
+                                                <rect key="frame" x="414" y="0.0" width="414" height="896"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="peter3" translatesAutoresizingMaskIntoConstraints="NO" id="WDd-SA-0Z6">
+                                                <rect key="frame" x="828" y="0.0" width="414" height="896"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="peter4" translatesAutoresizingMaskIntoConstraints="NO" id="5KP-rv-FOy">
+                                                <rect key="frame" x="1242" y="0.0" width="414" height="896"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="peter5" translatesAutoresizingMaskIntoConstraints="NO" id="Q1r-e5-duG">
+                                                <rect key="frame" x="1656" y="0.0" width="414" height="896"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="omN-rM-UFC" firstAttribute="height" secondItem="pJ1-i1-PMg" secondAttribute="height" id="6zc-gs-Y5G"/>
+                                    <constraint firstItem="cdc-7q-glv" firstAttribute="top" secondItem="fdg-C9-0gr" secondAttribute="top" id="9Q7-h6-fYX"/>
+                                    <constraint firstItem="cdc-7q-glv" firstAttribute="bottom" secondItem="fdg-C9-0gr" secondAttribute="bottom" id="H5e-dp-Fbg"/>
+                                    <constraint firstItem="cdc-7q-glv" firstAttribute="trailing" secondItem="fdg-C9-0gr" secondAttribute="trailing" id="QHr-Ng-3pp"/>
+                                    <constraint firstItem="cdc-7q-glv" firstAttribute="leading" secondItem="fdg-C9-0gr" secondAttribute="leading" id="jKQ-Es-cdM"/>
+                                    <constraint firstItem="omN-rM-UFC" firstAttribute="width" secondItem="pJ1-i1-PMg" secondAttribute="width" id="nXD-uu-jAx"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="fdg-C9-0gr"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="pJ1-i1-PMg"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Bcj-90-P1Y" secondAttribute="trailing" id="TpY-Sj-OIP"/>
+                            <constraint firstAttribute="bottom" secondItem="Bcj-90-P1Y" secondAttribute="bottom" id="VXR-zH-dxy"/>
+                            <constraint firstItem="Bcj-90-P1Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZTW-4u-2Pm"/>
+                            <constraint firstItem="Bcj-90-P1Y" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="iVK-cA-dU2"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="peter1" width="277" height="437"/>
+        <image name="peter2" width="374" height="405"/>
+        <image name="peter3" width="313" height="374"/>
+        <image name="peter4" width="237" height="325"/>
+        <image name="peter5" width="281" height="377"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
